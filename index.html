@@ -53,6 +53,44 @@
                 </a>
             </div>
         </div>
+    </nav>
+
+    <!-- overflow-hidden crops anything that sticks out of the section. 
+   jodi leaf is boro  or wider hoy banner er theke tahole, the extra part  cut off hobe instead of spilling onto the next section. -->
+
+    <section class="relative overflow-hidden bg-green-100">
+        <!-- ekhane section ta relative thakbe karon eta parent ar etar vitor ja thakbe segula obsulate thakbe  -->
+
+        <!-- Left leaf (hidden on mobile) -->
+        <img src="./assets/hero-leaf1.png" alt=""
+            class="hidden md:block absolute left-0 bottom-0 h-full max-h-80 object-contain pointer-events-none" />
+        <!-- object-contain	Keeps the image's proportions, jate eta stretched or squashed na hoy
+     Button not clickable hobe na: pointer-events-none.-->
+
+        <!-- Right leaf -->
+        <img src="./assets/hero-leaf2.png" alt=""
+            class="hidden md:block absolute right-0 bottom-0 h-full max-h-80 object-contain pointer-events-none" />
+
+        <!-- Content text-->
+        <div class="relative max-w-2xl mx-auto text-center px-4 py-16 md:py-24">
+            <!-- max-w-2xl limits the width to 42rem (672px). That keeps the subtitle from stretching across the whole screen.  -->
+            <!-- mx-auto means left and right margins are automatic, which centers the block horizontally. -->
+
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-800">
+                Plant a Tree, Grow a Future
+            </h1>
+            <p class="mt-4 text-sm md:text-base text-slate-600">
+                Join our mission to plant 1 million trees and make the Earth greener for future generations.
+            </p>
+            <a href="#plant"
+                class="btn mt-6 bg-yellow-400 hover:bg-yellow-300 text-green-900 border-none rounded-full px-6">
+                Get Involved
+            </a>
+        </div>
+
+    </section>
+
+
 
 </body>
 
