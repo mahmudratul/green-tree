@@ -92,6 +92,87 @@
 
 
 
+    <!-- catgory, tree cards, and cart section  -->
+
+
+    <section id="gallery" class="max-w-7xl mx-auto px-4 py-12 md:py-16">
+
+        <h2 class="text-2xl md:text-3xl font-semibold text-center text-slate-800 mb-10">
+            Choose Your Trees
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[200px_1fr_260px] gap-6">
+
+            <!--  Categories -->
+            <aside>
+                <h3 class="font-semibold text-lg mb-3">Categories</h3>
+
+                <div id="category-container" class="flex flex-wrap lg:flex-col gap-2">
+                    <button class="btn btn-sm justify-start bg-green-700 text-white border-none">All Trees</button>
+                    <button class="btn btn-sm justify-start btn-ghost">Fruit Trees</button>
+                    <button class="btn btn-sm justify-start btn-ghost">Flowering Trees</button>
+                    <button class="btn btn-sm justify-start btn-ghost">Shade Trees</button>
+                    <button class="btn btn-sm justify-start btn-ghost">Medicinal Trees</button>
+                </div>
+            </aside>
+
+
+            <!--  Tree cards -->
+
+            <div id="tree-container" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 content-start">
+
+                <!-- One sample card (JS will generate these later) -->
+                <div class="card bg-white shadow-sm">
+                    <div class="p-3">
+                        <div class="h-40 bg-gray-200 rounded-lg"></div>
+
+                        <h3 class="mt-3 text-sm font-semibold cursor-pointer hover:text-green-700">Mango Tree</h3>
+
+                        <p class="mt-1 text-xs text-slate-500 line-clamp-2">
+                            A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense
+                            green leaves
+                            provide shade.
+                        </p>
+
+                        <div class="flex justify-between items-center mt-3">
+                            <span class="badge badge-sm bg-green-100 text-green-700 border-none">Fruit Tree</span>
+                            <span class="text-sm font-semibold">৳500</span>
+                        </div>
+
+                        <button
+                            class="btn btn-sm w-full mt-3 rounded-full bg-green-700 hover:bg-green-800 text-white border-none">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Cart -->
+            <aside class="bg-white rounded-xl shadow-sm p-4 h-fit lg:sticky lg:top-4">
+                <h3 class="font-semibold text-lg mb-3">Your Cart</h3>
+
+                <div id="cart-list" class="space-y-2">
+
+                    <!-- Sample cart item -->
+                    <div class="flex justify-between items-center bg-green-50 rounded-lg p-2">
+                        <div>
+                            <p class="text-sm font-semibold">Mango Tree</p>
+                            <p class="text-xs text-slate-500">৳500 × 1</p>
+                        </div>
+                        <button class="btn btn-ghost btn-xs">❌</button>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-between items-center border-t border-gray-200 mt-4 pt-3 text-sm">
+                    <span>Total:</span>
+                    <span id="cart-total" class="font-semibold">৳500</span>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
 </body>
 
 </html>
